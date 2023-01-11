@@ -65,6 +65,20 @@
 
 
 # Bonus 
+1. Kinect – Nearest Point Tracking
+  Δεν χρειάστηκε η διαδικασία Kinect – SimpleOpenNI – Installation, καθώς η εργασία υλοποιήθηκε στο εργαστήριο. Συνδέσαμε την κάμερα στον υπολογιστή, κατεβάσαμε την βιβλιοθήκη SimpleOpenNI και ανοίξαμε το παράδειγμα DepthInfrared. Ουσιαστικά πήραμε από το παράδειγμα DepthInfrared τον τρόπο κράτησης των συντεταγμένων του κοντινότερου σημείου closeX και closeY . Aπο το παράδειγμα 9-8 του βιβλίου learning processing 2 χρησιοποιησαμε τους πίνακες closestX[i] και closestY[i] για το κράτημα των προηγουμενων θέσεων του κοντινοτερου σημειου με αποτέλεσμα την δημιουργια του φιδιου εκχωρόντας τις τιμες closeX και closeY στους πίνακες.
+  ![211901834-e00493a7-11bb-4e79-811a-f05ecd05ba22](https://user-images.githubusercontent.com/117392255/211940521-a5377dee-efe7-4ca1-99dc-bd0934869bfb.png)
+
+  
+  2. Kinect – Background Removal
+Eπεξεργαστήκαμε το έτοιμο παράδειγμα Remove_Background_RGB, αποθηκεύσαμε μία εικόνα στον φάκελο data αλλάξαμε το pixels[i] από color σε backgroundReplace.pixels[i]; όπου για αυτό ισχύει backgroundReplace = loadImage("image2.jpg"); μέ την λογική από το από το παράδειγμα 16-6 του learning processing.
+![211910428-9e5aef8b-fd18-4402-952a-211b4be682a0](https://user-images.githubusercontent.com/117392255/211940579-e3dcd587-84af-4492-9c8c-e5b5bee828fb.png)
+
+
+3. Kinect – Right-Hand Tracking
+Ανοίξαμε το παράδειγμα tracking sceleton και επεξεργαστήκαμε τον κώδικα με την ίδια λογική όπως το πρώτο ζητούμενο μέσα από το παράδειγμα παράδειγμα 9-8.
+![211933391-17fa8da1-a1c4-4e6b-a214-d46387f5312f](https://user-images.githubusercontent.com/117392255/211940595-6fe67950-e741-4f41-b8cc-316fcae19c11.png)
+
 
 
 # Conclusions
